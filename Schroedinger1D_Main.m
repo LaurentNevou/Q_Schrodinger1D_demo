@@ -13,8 +13,8 @@ clc
 % 1 for turn on
 
 FE_Method=1;            % Diagonalization of the Hamiltonian (FEM)
-Euler_Method=1;         % Scanning in Energy method (Euler)
-PWE_Method=0;           % Plane Wave Expansion (PWE)
+Euler_Method=0;         % Scanning in Energy method (Euler)
+PWE_Method=1;           % Plane Wave Expansion (PWE)
 
 saveV=0;
 savePSI=0;
