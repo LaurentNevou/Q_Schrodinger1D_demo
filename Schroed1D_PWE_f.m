@@ -94,8 +94,8 @@ for j=1:n
     psi(:,j)   = psi(:,j)/sqrt(sum(abs(psi(:,j)).^2)*dz) ;  % normalisation at 1
 end
 
-psi=psi(:,end:-1:1);
-E=E(end:-1:1);
+%psi=psi(:,end:-1:1);
+%E=E(end:-1:1);
 
 end
 
