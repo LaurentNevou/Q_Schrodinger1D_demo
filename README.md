@@ -1,7 +1,7 @@
 # Schroedinger1D_demo
 This code solves the time independent Schroedinger equation in 1D.
 
-It uses 3 different algorithms that can switch ON/OFF:
+It uses 3 different algorithms that can be switched ON/OFF:
 
 -> The FEM: Finite Elements Method
 
