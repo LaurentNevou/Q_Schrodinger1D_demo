@@ -25,7 +25,7 @@ dz=1E-10;               % resolution of the grid [m]
 n=10;                   % number of solution asked 
 
 Mass = 0.067;           % effective mass, constant over all the structure...
-F0=0%;-1e7;%-20         % Electric field Volt/meter
+F0=0;%;-1e7;%-20         % Electric field Volt/meter
 ScF=0.1;                % scaling factor to plot the wave function
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
