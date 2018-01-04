@@ -1,5 +1,5 @@
 # Schroedinger1D_demo
-This code solves the time independent Schroedinger equation in 1D.
+This code solves the time independent Schroedinger equation in 1D with a constant mass.
 
 It uses 3 different algorithms that can be switched ON/OFF:
 
