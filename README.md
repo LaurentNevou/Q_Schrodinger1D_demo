@@ -17,4 +17,4 @@ Three different potentials are proposed:
 
 -> The sinus
 
-Any potential can be loaded with homogeneous grid z [m] et V [eV]
+Any potential can be loaded with homogeneous grid z [m] and V [eV]
