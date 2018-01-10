@@ -41,7 +41,7 @@ E=real(E);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 for i=1:n
-  psi(:,i)=psi(:,i)/sqrt(trapz(z',abs(psi(:,i)).^2));  
+    psi(:,i)=psi(:,i)/sqrt(trapz(z',abs(psi(:,i)).^2));  % normalisation at 1
 end
 
 psi=psi(:,end:-1:1);

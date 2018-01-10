@@ -41,8 +41,8 @@ NG=length(G);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 idx = ones(NG,1)*(1:NG);        % matrix with elements equal to the column index idx(i,j) = j
-idx = idx - idx';               % matrix with elements equal to row - column idx(i,j) = i - j;
-idx = idx + NG;                 % idx(i,j) = i - j + N
+idx = idx' - idx;               % matrix with elements equal to row - column idx(i,j) = i - j;
+idx = idx + NG ;                % idx(i,j) = i - j + N
 
 D2=diag(G(1:NG)).^2;            % Operator second derivative
 
@@ -62,10 +62,10 @@ E=abs(E);
 %%%%%%%%%%%%%%%%% Transforming & Scaling the waves functions %%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-for j=1:n
-    psizz(:,j) = invFFT1D(psik(:,j)',Nz)/dzz ;
-    psi(:,j)   = interp1(zz,psizz(:,j),z);
-    psi(:,j)   = psi(:,j)/sqrt(sum(abs(psi(:,j)).^2)*dz) ;  % normalisation at 1
+for i=1:n
+    psizz    = invFFT1D(psik(:,i).',Nz)/dzz ; % take care that the transpose does not take the complex conjugate
+    psi_temp = interp1(zz,psizz,z);
+    psi(:,i) = psi_temp/sqrt(trapz(z,abs(psi_temp).^2));  % normalisation at 1
 end
 
 % in Octave, the order of the eigen values are reversed...
