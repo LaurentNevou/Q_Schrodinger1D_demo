@@ -19,5 +19,4 @@ Three different potentials are proposed:
 
 -> The sinus
 
-Any potential can be loaded with homogeneous grid z [m] and V [eV] and be solved with the 3 first methods.
-For the TM method, a sequence of layer must be provided.
+Any potential can be loaded with homogeneous grid z [m] and V [eV] and be solved with the 3 first methods. For the TM method, a sequence of layer must be provided.
