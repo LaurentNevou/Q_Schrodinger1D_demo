@@ -3,13 +3,13 @@ This code solves the time independent Schroedinger equation in 1D with a constan
 
 It uses 4 different algorithms that can be switched ON/OFF:
 
--> The FEM: Finite Elements Method
+-> The FDM: Finite Difference Method
 
--> The Scanning method using the Euler approach
+-> The Scanning/Shooting method using the Euler approach
 
 -> The PWE: Plane Wave Expansion method that solves the equation in the Fourier space
 
--> The TMM: Tranfer Matrix Method
+-> The TMM: Tranfer Matrix Method using the Scanning/Shooting method
 
 Three different potentials are proposed:
 
