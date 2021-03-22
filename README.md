@@ -1,6 +1,9 @@
 # Schroedinger1D_demo
 This code solves the time independent Schroedinger equation in 1D with a constant mass.
 
+![image](https://user-images.githubusercontent.com/35040499/111983702-b48ceb00-8b0a-11eb-8b66-944631713179.png)
+
+
 It uses 4 different algorithms that can be switched ON/OFF:
 
 -> The FDM: Finite Difference Method
